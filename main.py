@@ -18,7 +18,7 @@ def run():
 # 2. Setup Google Gemini
 genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 model = genai.GenerativeModel(
-    model_name="gemini-1.5-flash", 
+    model_name="gemini-2.5-flash", 
     system_instruction="""You are an immersive, strict text-based TTRPG Game Master running a MULTI-PLAYER game. 
     Rules:
     1. Actively track the overall group game state at the bottom of every turn: Location, Party Members, Group HP/Individual HP, and Shared Inventory.
