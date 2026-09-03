@@ -69,7 +69,8 @@ async def on_message(message):
                 await message.reply(response.text)
             except Exception as e:
                 print(f"Error encountered: {e}")
-                await message.reply("The chronometer glitched. Try again traveler!")
+                await message.reply(f"The chronometer glitched! Error details: `{str(e)[:150]}`")
+
 
 # Start Flask Webserver in background thread
 Thread(target=run).start()
